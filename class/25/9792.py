@@ -1,0 +1,5 @@
+from fnmatch import fnmatch
+
+for n in range(2025, 10**8, 2025):
+    if fnmatch(str(n), '123*4?5'):
+        print(n, n//37)

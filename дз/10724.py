@@ -5,7 +5,7 @@ ans = ''
 cnt = []
 y = 0
 for i in data:
-    if x in i:
+    if i in x:
         ans += i
     else:
         cnt.append(ans)
