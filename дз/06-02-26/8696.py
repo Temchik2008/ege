@@ -6,12 +6,13 @@ def prime(num):
 
 
 def f(num):
+    if prime(num):
+        return []
     d = set()
     for i in range(2,int(num ** .5) +1):
         if num % i == 0:
             d |= {i, num//i}
-    if prime(sum(d)):
-        return []
+
     if prime(sum(d)%100_000):
         return [num, sum(d)]
     return []
