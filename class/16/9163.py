@@ -9,4 +9,4 @@ def f(n):
 for i in range(1, 2025)[::-1]:
     f(i)
 
-print(f(15)- f(24))
+print(f'{2028:b}')
