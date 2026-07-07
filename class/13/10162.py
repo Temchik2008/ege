@@ -20,3 +20,10 @@ for mask in range(16, 31)[::-1]:
     if ip1 in net1.hosts() and ip2 in net1.hosts():
         print(net1.netmask)
         break
+
+net = ip_network('185.249.55.138/255.255.192.0', False)
+
+print(net.broadcast_address) # Широковещательный
+print(net.network_address) # Адрес сети
+print(max(net.hosts())) # Наибольший номер компа
+print(min(net.hosts())) # Наименьший номер компа
